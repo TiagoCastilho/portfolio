@@ -1,0 +1,83 @@
+.default-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #f7f7f7;
+    background-image: url(../../assets/bg002.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.default-about .section-title,
+.default-about .section-desc {
+
+}
+.default-about .section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default-about .section-desc {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: initial;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.default-about .section-desc2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffb340;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 2px #777;
+}
+.default-about .section-body {
+    max-width: 700px;
+    margin: auto;
+    color: #000;
+}
+.section-aboutus {
+    display: flex;
+}
+.section-aboutus--left {
+    flex: 1;
+}
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+.section-aboutus--right {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 5px 10px #333;
+    background-color: #ffb340;
+    background-image: url(../../assets/Perfil3.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+.buttom-about {
+    display: inline-block;
+    background-color: #ffb340;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    opacity: .8;
+}
+.buttom-about:hover {
+    opacity: 1;
+}

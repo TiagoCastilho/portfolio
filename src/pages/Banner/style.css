@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pic-ctn {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    40% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: #000;
+    background-image: url(../../assets/bg001.png);
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .pic-ctn > .slide {
+    position: absolute;
+    opacity: 0;
+    animation: display 20s infinite;
+  }
+
+  .slide:nth-child(2) {
+    animation-delay: 10s;
+  }
+
+  .slide {
+    height: 100%;
+    display: block;
+  }
+  
+  .pic-ctn .slidearea {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.slidearea img {
+  width: 400px;
+}
+
+.pic-ctn h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.pic-ctn h1 span {
+    color: #ffb340;
+}
+
+.pic-ctn h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.buttom-banner {
+  display: inline-block;
+  background-color: #ffb340;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.buttom-banner:hover {
+  opacity: 1;
+}

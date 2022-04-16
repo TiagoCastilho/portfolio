@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   overflow-x: hidden;
+}
+header {
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+}
+.header {
+    max-width: 1140px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 240px;
+}
+.logoimg {
+    width: 250px;
+    height: 70px;
+    background-color: #ffb340;
+    background-image: url(../../assets/logo002.png);
+    background-size: cover;
+    background-position: center;
+}
+.menu-opener {
+    display: none;
+}
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.menu ul,
+.menu li {
+    list-style: none;
+}
+.menu ul {
+    display: flex;
+}
+.menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+.menu li a:hover,
+.menu .active a {
+    border-bottom: 2px solid #fff;
+    color: #ffb340;
+    transition: var(--trans,color .4s ease 0s)
+}
+.buttom {
+    display: inline-block;
+    background-color: #b28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.buttom:hover {
+    opacity: 1;
+}

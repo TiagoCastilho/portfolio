@@ -1,0 +1,51 @@
+.default-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    background-color: #f7f7f7;
+    background-image: url(../../assets/bg002.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.default-contact .section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default-contact .section-desc {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffb340;
+    margin-top: 100px;
+    text-shadow: 1px 1px 2px #777;
+}
+.section-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+.section-social a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 30px;
+}
+.section-social a:hover {
+    opacity: 0.8;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #999;
+}
+.social-buttom {
+    width: 365px;
+    margin-bottom: 100px;
+}
