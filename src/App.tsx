@@ -10,6 +10,8 @@ import { Project1 } from "./pages/Works/Project1";
 import { Project2 } from "./pages/Works/Project2";
 import { Project3 } from "./pages/Works/Project3";
 import { Project4 } from "./pages/Works/Project4";
+import { Project5 } from "./pages/Works/Project5";
+import { Project6 } from "./pages/Works/Project6";
 
 const App = () => {
   return(
@@ -26,6 +28,8 @@ const App = () => {
           <Route path="/works/project2" element={<Project2 />}/>
           <Route path="/works/project3" element={<Project3 />}/>
           <Route path="/works/project4" element={<Project4 />}/>
+          <Route path="/works/project5" element={<Project5 />}/>
+          <Route path="/works/project6" element={<Project6 />}/>
           <Route path="/contact" element={<Contact />}/>
           <Route path="*" element={<NotFound />}/>
         </Routes>

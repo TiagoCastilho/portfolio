@@ -8,7 +8,8 @@
 .gallery .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
 .gallery .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3),
 .gallery .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4),
-.gallery .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5) {
+.gallery .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5),
+.gallery .control-operator:nth-of-type(6):target ~ .controls .control-button:nth-of-type(6) {
   color: #ffb340;
   color: rgba(255, 179, 64, 0.8);
 }
@@ -94,13 +95,21 @@
   pointer-events: auto;
   opacity: 1;
 }
+.gallery .control-operator:nth-of-type(5):target ~ .item:nth-of-type(5) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.gallery .control-operator:nth-of-type(6):target ~ .item:nth-of-type(6) {
+  pointer-events: auto;
+  opacity: 1;
+}
 
 .items-4.autoplay .control-button {
-  animation: controlAnimation-4 28s infinite;
+  animation: controlAnimation-4 42s infinite;
 }
 
 .items-4.autoplay .item {
-  animation: galleryAnimation-4 28s infinite;
+  animation: galleryAnimation-4 42s infinite;
 }
 
 .items-4 .control-button:nth-of-type(1),
@@ -121,6 +130,16 @@
 .items-4 .control-button:nth-of-type(4),
 .items-4 .item:nth-of-type(4) {
   animation-delay: 19s;
+}
+
+.items-4 .control-button:nth-of-type(5),
+.items-4 .item:nth-of-type(5) {
+  animation-delay: 26s;
+}
+
+.items-4 .control-button:nth-of-type(6),
+.items-4 .item:nth-of-type(6) {
+  animation-delay: 33s;
 }
 
 .gallery .control-button {
