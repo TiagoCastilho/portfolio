@@ -1,5 +1,5 @@
 Repositório em teste.
 
-Aguardando configurações de responsividade.
+Recebendo contantes atualizações.
 
 poderá visualizá-lo em: https://tiagocastilho.github.io/portfolio/
