@@ -22,6 +22,7 @@ header {
 }
 .logo {
     width: 240px;
+    margin-left: 30px;
 }
 .logoimg {
     width: 250px;
@@ -57,6 +58,7 @@ header {
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-bottom: 2px solid #000;
 }
 .menu li a:hover,
@@ -65,19 +67,87 @@ header {
     color: #ffb340;
     transition: var(--trans,color .4s ease 0s)
 }
-.buttom {
-    display: inline-block;
-    background-color: #b28756;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
-    opacity: 0.8;
+
+@media (min-width:450px) and (max-width:800px) {
+    .menu-opener {
+        display: block;
+        width: 70px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color:rgba(0, 0, 0, 0.9);
+        width: 45vw;
+        height: calc(100vh - 120px);
+        top: 80px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a:hover,
+    .menu li a {
+        font-weight: bold;
+        height: 60px;
+        font-size: 18px;
+        border: 0;
+        margin-left: 25px;
+        justify-content: start;
+    }
+    .menu li.active a {
+        border: 0;
+        color: #ffb340;
+    }
 }
-.buttom:hover {
-    opacity: 1;
+
+@media (max-width:450px) {
+    .logo {
+        margin-left: 36px;
+    }
+    .logoimg {
+        width: 58px;
+        height: 58px;
+        background-image: url(../../assets/logo.png);
+        border-radius: 50%;
+    }
+    .menu-opener {
+        display: block;
+        width: 70px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    nav {
+        display: none;
+        align-items: center;
+        position: absolute;
+        z-index: 99;
+        background-color:rgba(0, 0, 0, 0.9);
+        width: 100vw;
+        height: calc(100vh - 120px);
+        top: 80px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a:hover,
+    .menu li a {
+        font-weight: bold;
+        height: 60px;
+        font-size: 18px;
+        border: 0;
+    }
+    .menu li.active a {
+        border: 0;
+        color: #ffb340;
+    }
+}
+
+@media (min-width:800px) {
+    nav {
+        display: flex !important;
+    }
 }

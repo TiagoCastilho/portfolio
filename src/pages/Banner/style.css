@@ -108,3 +108,21 @@ html, body {
 .buttom-banner:hover {
   opacity: 1;
 }
+
+@media (min-width:450px) and (max-width:800px) {
+  .pic-ctn h1 {
+    font-size: 25px;
+  }
+  .slidearea img {
+    width: 250px;
+  }
+}
+
+@media (max-width:450px) {
+  .pic-ctn h1 {
+    font-size: 20px;
+  }
+  .slidearea img {
+    width: 180px;
+  }
+}

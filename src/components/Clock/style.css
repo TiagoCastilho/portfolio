@@ -13,3 +13,20 @@
     color: #ffb340;
     text-shadow: 0 0 25px #333;
 }
+
+@media (max-width:800px) {
+    .clockarea {
+        font-size: 20px;
+    }
+    .clock {
+        font-size: 40px;
+    }
+}
+@media (max-width:450px) {
+    .clockarea {
+        font-size: 20px;
+    }
+    .clock {
+        font-size: 30px;
+    }
+}
