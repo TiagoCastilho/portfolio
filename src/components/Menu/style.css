@@ -146,7 +146,7 @@ header {
     }
 }
 
-@media (min-width:800px) {
+@media (min-width:801px) {
     nav {
         display: flex !important;
     }
