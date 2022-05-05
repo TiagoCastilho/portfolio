@@ -169,7 +169,6 @@
   flex-direction: column;
   width: 100vw;
   height: calc(100% - 150px);
-  justify-content: center;
   align-items: center;
   text-align: center;
 }

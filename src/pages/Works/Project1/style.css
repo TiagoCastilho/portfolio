@@ -58,3 +58,10 @@ ul {
   transform: translate(-50%);
   border-radius: 20px;
   }
+
+@media (max-width:450px) {
+  .left-side img {
+    width: 100px;
+    height: auto;
+  }
+}

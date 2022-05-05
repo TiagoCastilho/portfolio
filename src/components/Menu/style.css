@@ -120,7 +120,6 @@ header {
         cursor: pointer;
     }
     nav {
-        display: none;
         align-items: center;
         position: absolute;
         z-index: 99;

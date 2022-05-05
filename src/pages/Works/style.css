@@ -8,6 +8,7 @@
     background-image: url(../../assets/bg1.jpg);
     background-size: cover;
     background-position: bottom;
+    overflow-y: auto;
 }
 .default-works .section-title {
     font-size: 30px;
@@ -17,7 +18,7 @@
     text-transform: uppercase;
     font-weight: 600;
     padding-top: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .default-works .section-desc {
@@ -25,15 +26,15 @@
     font-size: 20px;
     font-weight: bold;
     color: #ffb340;
-    margin: 50px 0;
+    margin: 30px 0;
     text-shadow: 1px 1px 2px #999;
 }
 .default-works .section-body {
     display: flex;
-    height: 62%;
+    height: 70%;
     margin: 0;
 }
-.section-team-area {
+.section-works-area {
     display: flex;
     flex-direction: column;
     height: 100%;

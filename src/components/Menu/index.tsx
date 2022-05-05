@@ -26,7 +26,7 @@ export const Menu = () => {
                     <nav style={{
                             display:show,
                     }}>
-                        <ul>
+                        <ul onClick={e=>setToogle(state => !state)}>
                             <li className="active"><Link to="/">Home</Link></li>
                             <li><Link to="/about">Quem somos</Link></li>
                             <li><Link to="/works">Trabalhos</Link></li>
