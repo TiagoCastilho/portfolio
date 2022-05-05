@@ -8,6 +8,7 @@
     background-image: url(../../assets/bg002.png);
     background-size: cover;
     background-position: bottom;
+    overflow: hidden;
 }
 .default-contact .section-title {
     font-size: 30px;
@@ -48,4 +49,34 @@
 .social-buttom {
     width: 365px;
     margin-bottom: 100px;
+}
+
+@media (min-width:450px) and (max-width:800px) {
+    .default-contact .section-title {
+        font-size: 22px;
+        margin-top: 100px;
+    }
+    .default-contact .section-desc {
+        font-size: 18px;
+    }
+    .section-social a img {
+        width: 35px;
+        height: 35px;
+        margin: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .default-contact .section-title {
+        font-size: 20px;
+        margin-top: 100px;
+    }
+    .default-contact .section-desc {
+        font-size: 17px;
+    }
+    .section-social a img {
+        width: 30px;
+        height: 30px;
+        margin: 15px;
+    }
 }
