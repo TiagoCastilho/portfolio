@@ -34,6 +34,11 @@ export const Menu = () => {
                         </ul>
                     </nav>
                 </div>
+                <div className="closeMenu isClose"
+                    onClick={e=>setToogle(state => !state)}
+                    style={{
+                        display:show,
+                }}></div>
             </div>
          </header>
     );
