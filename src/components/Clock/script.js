@@ -18,7 +18,7 @@ function showTime() {
     
     const hour = h+':'+m+':'+s;
 
-    document.getElementsByClassName('.clock').value = hour;
+    document.querySelector('.clock').innerHTML = hour;
 
     if ( h <= 4) {
         document.querySelector('.turn').innerHTML = "Boa noite!";
