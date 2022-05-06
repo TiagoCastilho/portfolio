@@ -51,6 +51,10 @@
 .social-buttom {
     width: 365px;
     margin-bottom: 100px;
+    opacity: .8;
+}
+.social-buttom:hover {
+    opacity: 1;
 }
 
 @media (min-width:450px) and (max-width:800px) {

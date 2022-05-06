@@ -1,4 +1,3 @@
-import { Slide } from '../../components/Slide';
 import './style.css';
 
 export const Works = () => {

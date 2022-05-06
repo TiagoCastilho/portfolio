@@ -1,4 +1,4 @@
-let timer = setInterval(showTime, 1000);
+const timer = setInterval(showTime, 1000);
 
 function showTime() {
     let d = new Date();
@@ -16,9 +16,9 @@ function showTime() {
         s = "0"+s;
     }
     
-    let txt = h+':'+m+':'+s;
+    const hour = h+':'+m+':'+s;
 
-    document.querySelector('.clock').innerHTML = txt;
+    document.getElementsByClassName('.clock').value = hour;
 
     if ( h <= 4) {
         document.querySelector('.turn').innerHTML = "Boa noite!";
