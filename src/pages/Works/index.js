@@ -1,34 +1,38 @@
 import { useState, useEffect } from 'react';
-import projectsJson from './projectsJson';
+import './db.json';
 import './style.css';
 
 export const Works = () => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(false);
-  
+    
     useEffect(() => {
-      loadProjects();
+        loadProjects();
     }, []);
-
-    const loadProjects = () => {
+    
+    const loadProjects = async () => {
         try {
-          setLoading(true);
-          let response = fetch(projectsJson);
-          let json = response.json();
-          setLoading(false);
-          setProjects(json);
+            setLoading(true);
+            let response = await fetch('./db.json');
+            let json = await response.json();
+            setLoading(false);
+            setProjects(json);
         } catch(e) {
-          setLoading(false);
-          setProjects([]);
-          console.error();
+            setLoading(false);
+            setProjects([]);
+            console.error(e);
         }
     }
-
+    
     projects.map((item, index) => {
         let projectItem = document.querySelector('.project-item').cloneNode(true);
+
+        projectItem.querySelector('.project-item--img img').src = item.url;
+        projectItem.querySelector('.project-item--title').innerHTML = item.title;
+
         document.querySelector('.section-body').append( projectItem );
     });
-    
+
     return(
         <section className="default-works">
             <div className="section-works-area">
@@ -46,6 +50,5 @@ export const Works = () => {
                 </div>
             </div>
         </section>
-        
     );
 }
