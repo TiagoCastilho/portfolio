@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import projectJson from './projectList';
 import './style.css';
 
 export const Works = () => {
@@ -13,7 +12,7 @@ export const Works = () => {
     const loadProjects = async () => {
         try {
             setLoading(true);
-            let response = await fetch('https://jsonplaceholder.typicode.com/photos');
+            let response = await fetch('http://localhost:3000/projects');
             let json = await response.json();
             setLoading(false);
             setProjects(json);
@@ -23,6 +22,7 @@ export const Works = () => {
             console.error(e);
         }
     }
+    console.log(projects);
 
     projects.map((item, index) => {
         let projectItem = document.querySelector('.project-item').cloneNode(true);
