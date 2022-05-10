@@ -1,10 +1,19 @@
 import { useState, useEffect } from 'react';
 import './style.css';
+import { Project1 } from './Project1';
+import { Project2 } from './Project2';
+import { Project3 } from './Project3';
+import { Project4 } from './Project4';
+import { Project5 } from './Project5';
+import { Project6 } from './Project6';
+import { Project7 } from './Project7';
+import { Project8 } from './Project8';
+
 
 export const Works = () => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(false);
-    
+   
     useEffect(() => {
         loadProjects();
     }, []);
@@ -22,7 +31,6 @@ export const Works = () => {
             console.error(e);
         }
     }
-    console.log(projects);
 
     projects.map((item, index) => {
         let projectItem = document.querySelector('.project-item').cloneNode(true);
@@ -33,12 +41,24 @@ export const Works = () => {
         document.querySelector('.section-body').append( projectItem );
     });
 
+    function closeModal() {
+        document.querySelector('.projectWindowArea').style.opacity = 0;
+        setTimeout(()=>{
+            document.querySelector('.projectWindowArea').style.display = 'none';
+        },500);
+    }
+    document.querySelectorAll('.projectInfo--backButton, .projectInfo--backMobileButton').forEach((item)=> {
+        item.addEventListener('click', closeModal);
+    });
+
     return(
         <section className="default-works">
             <div className="section-works-area">
                 <div className="section-title">Trabalhos</div>
                 <div className="section-desc">Projetos Recentes</div>
-                <div className="section-body"></div>
+                <div className="section-body">
+                    <Project1>Conteúdo do Modal</Project1>
+                </div>
             </div>
             <div className='model'>
                 <div className='project-item'>
