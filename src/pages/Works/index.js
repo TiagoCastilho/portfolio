@@ -33,7 +33,7 @@ export const Works = () => {
     }
 
     projects.map((item, index) => {
-        let projectItem = document.querySelector('.project-item').cloneNode(true);
+        let projectItem = document.querySelector('.model .project-item').cloneNode(true);
 
         projectItem.querySelector('.project-item--img img').src = item.url;
         projectItem.querySelector('.project-item--title').innerHTML = item.title;
@@ -57,7 +57,7 @@ export const Works = () => {
                 <div className="section-title">Trabalhos</div>
                 <div className="section-desc">Projetos Recentes</div>
                 <div className="section-body">
-                    <Project1>Conteúdo do Modal</Project1>
+                    <Project1></Project1>
                 </div>
             </div>
             <div className='model'>
