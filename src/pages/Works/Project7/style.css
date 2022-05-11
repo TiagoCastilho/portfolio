@@ -45,6 +45,12 @@
   ul {
     margin-left: 25px;
   }
+
+  .button-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
 .project-button {
     display: inline-block;
@@ -81,3 +87,61 @@
 .project-backButton:hover {
     opacity: 1;
 } 
+
+@media (max-width:1176px) {
+  .button-area{
+    flex-direction: column;  
+  }
+  .project-backButton {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+@media (max-width:1000px) {
+    .project-body {
+      flex-direction: column;
+    }
+    .left-side img {
+      width: 260px;
+    }
+    .button-area{
+      flex-direction: initial;  
+    }
+    .project-backButton {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+}
+@media (max-width:913px) {
+  .project-button {
+    margin-top: 15px;
+  }
+  .project-backButton {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width:800px) {
+  .right-side {
+    font-size:12px;
+  }
+}
+
+@media (max-width:500px) {
+  .left-side img {
+    width: 200px;
+  }
+}
+
+@media (max-width:480px) {
+  .left-side img {
+    width: 110px;
+  }
+  .button-area{
+    flex-direction: column;  
+  }
+  .project-backButton {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}

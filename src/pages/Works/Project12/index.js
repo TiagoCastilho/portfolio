@@ -20,8 +20,10 @@ export const Project12 = () => {
                         <li>CSS3</li>
                         <li>Javascript</li>
                     </ul>
-                    <a href="https://tiagocastilho.github.io/Estudo---Javascript/Projeto%2014%20-%20Jogo%20da%20Velha/"  target="_blank" rel="noopener noreferrer" className="project-button">Testar Projeto</a>
-                    <Link to='/works' className="project-backButton">Voltar</Link>
+                    <div className='button-area'>
+                        <a href="https://tiagocastilho.github.io/Estudo---Javascript/Projeto%2014%20-%20Jogo%20da%20Velha/"  target="_blank" rel="noopener noreferrer" className="project-button">Testar Projeto</a>
+                        <Link to='/works' className="project-backButton">Voltar</Link>
+                    </div>
                 </div>
             </div>
         </div>

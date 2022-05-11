@@ -21,8 +21,10 @@ export const Project1 = () => {
                             <li>Javascript</li>
                             <li>ReactJS</li>
                     </ul>
-                    <a href="https://tiagocastilho.github.io/Estudo---ReactJS/react-ex06/build/index.html"  target="_blank" rel="noopener noreferrer" className="project-button">Testar Projeto</a>
-                    <Link to='/works' className="project-backButton">Voltar</Link>
+                    <div className='button-area'>
+                        <a href="https://tiagocastilho.github.io/Estudo---ReactJS/react-ex06/build/index.html"  target="_blank" rel="noopener noreferrer" className="project-button">Testar Projeto</a>
+                        <Link to='/works' className="project-backButton">Voltar</Link>
+                    </div>
                 </div>
             </div>
         </div>

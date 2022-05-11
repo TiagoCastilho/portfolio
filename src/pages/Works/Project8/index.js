@@ -19,8 +19,10 @@ export const Project8 = () => {
                         <li>HTML5</li>
                         <li>CSS3</li>
                     </ul>
-                    <a href="https://tiagocastilho.github.io/Estudo---HTML-e-CSS/Projeto%2001%20-%20P%C3%A1gina%20com%20Flexbox%20-%20Medicenter/medicenter/"  target="_blank" rel="noopener noreferrer" className="project-button">Testar Projeto</a>
-                    <Link to='/works' className="project-backButton">Voltar</Link>
+                    <div className='button-area'>
+                        <a href="https://tiagocastilho.github.io/Estudo---HTML-e-CSS/Projeto%2001%20-%20P%C3%A1gina%20com%20Flexbox%20-%20Medicenter/medicenter/"  target="_blank" rel="noopener noreferrer" className="project-button">Testar Projeto</a>
+                        <Link to='/works' className="project-backButton">Voltar</Link>
+                    </div>
                 </div>
             </div>
         </div>
