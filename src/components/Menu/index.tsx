@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './style.css';
 import menuImg from '../../assets/menu.png';
 
@@ -27,10 +27,10 @@ export const Menu = () => {
                             display:show,
                     }}>
                         <ul onClick={e=>setToogle(state => !state)}>
-                            <li className="active"><Link to="/">Home</Link></li>
-                            <li><Link to="/about">Quem somos</Link></li>
-                            <li><Link to="/works">Trabalhos</Link></li>
-                            <li><Link to="/contact">Contato</Link></li>
+                            <li><NavLink to="/" className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>Home</NavLink></li>
+                            <li><NavLink to="/about" className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>Quem somos</NavLink></li>
+                            <li><NavLink to="/works" className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>Trabalhos</NavLink></li>
+                            <li><NavLink to="/contact" className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>Contato</NavLink></li>
                         </ul>
                     </nav>
                 </div>

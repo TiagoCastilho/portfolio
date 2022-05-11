@@ -62,7 +62,7 @@ header {
     border-bottom: 2px solid #000;
 }
 .menu li a:hover,
-.menu .active a {
+.menu .activated {
     border-bottom: 2px solid #fff;
     color: #ffb340;
     transition: var(--trans,color .4s ease 0s)
@@ -87,6 +87,7 @@ header {
     }
     .menu ul {
         flex-direction: column;
+        margin-right: 25px;
     }
     .menu li a:hover,
     .menu li a {
@@ -144,6 +145,7 @@ header {
     }
     .menu ul {
         flex-direction: column;
+        margin-right: 25px;
     }
     .menu li a:hover,
     .menu li a {
@@ -161,5 +163,9 @@ header {
 @media (min-width:801px) {
     nav {
         display: flex !important;
+    }
+    .menu ul {
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }
