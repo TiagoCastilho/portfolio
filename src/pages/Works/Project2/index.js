@@ -1,30 +1,30 @@
 import './style.css';
 import Image from '../../../assets/img2.png';
+import { Link } from 'react-router-dom';
 
 export const Project2 = () => {
-    return (
-        <div className="projectWindowArea">
-            <div className="projectWindowBody">
-                <div className="projectInfo--backMobileButton">Voltar</div>
-                <div className="projectImg">
-                    <img src={Image} />
+    return(
+        <div className='main'>
+            <div className='project-title'>
+                <p>Calculadora de IMC</p>
+            </div>
+            <div className="project-body">
+                <div className="left-side">
+                    <img src={Image} alt="" />
                 </div>
-                <div className="projectInfo">
-                    <h1>Calculadora de IMC</h1>
-                    <div className="projectInfo--desc">Este projeto foi desenvolvido em aula com a utilização das seguintes tecnolodias:</div>
-                    <div className="projectInfo--infoarea">
-                        <div className="projectInfo--techInfo">Tecnologias utilizadas</div>
-                        <ul className="projectInfo--tech">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Javascript</li>
-                            <li>ReactJS</li>
-                        </ul>
-                    </div>
-                    <a href="https://tiagocastilho.github.io/Estudo---ReactJS/react-ex02/build/index.html"  target="_blank" rel="noopener noreferrer" className="projectInfo--testButton">Testar Projeto</a>
-                    <div className="projectInfo--backButton">Voltar</div>
+                <div className="right-side">
+                    <p>Este projeto foi desenvolvido em aula com a utilização das seguintes tecnolodias:</p>
+                    <br />
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>ReactJS</li>
+                    </ul>
+                    <a href="https://tiagocastilho.github.io/Estudo---ReactJS/react-ex02/build/index.html"  target="_blank" rel="noopener noreferrer" className="project-button">Testar Projeto</a>
+                    <Link to='/works' className="project-backButton">Voltar</Link>
                 </div>
             </div>
         </div>
     );
-}
+} 

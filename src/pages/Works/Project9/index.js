@@ -1,12 +1,12 @@
-import './style.css';
-import Image from '../../../assets/img4.png';
 import { Link } from 'react-router-dom';
+import Image from '../../../assets/img9.png';
+import './style.css';
 
-export const Project4 = () => {
+export const Project9 = () => {
     return(
         <div className='main'>
             <div className='project-title'>
-                <p>Desenhe no Canvas</p>
+                <p>Compra de Pizzas</p>
             </div>
             <div className="project-body">
                 <div className="left-side">
@@ -20,7 +20,7 @@ export const Project4 = () => {
                         <li>CSS3</li>
                         <li>Javascript</li>
                     </ul>
-                    <a href="https://tiagocastilho.github.io/Estudo---Javascript/Projeto%2015%20-%20Quadro%20de%20desenho/"  target="_blank" rel="noopener noreferrer" className="project-button">Testar Projeto</a>
+                    <a href="https://tiagocastilho.github.io/Estudo---Javascript/Projeto%207%20-%20Compra%20de%20Pizzas/"  target="_blank" rel="noopener noreferrer" className="project-button">Testar Projeto</a>
                     <Link to='/works' className="project-backButton">Voltar</Link>
                 </div>
             </div>

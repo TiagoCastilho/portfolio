@@ -1,65 +1,52 @@
-.projectWindowArea {
-    position:fixed;
-    left:0;
-    top:0;
-    bottom:0;
-    right:0;
-    background-color:rgba(0, 0, 0, 0.7);
-    z-index: 900;
-    display:flex;
-    transition: all ease .5s;
+.main {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-y:auto;
-}
-.projectWindowBody {
-    width:800px;
-    background-color:#FFF;
-    border-radius:10px;
-    box-shadow:0px 0px 15px #999;
-    display:flex;
-    margin:20px 0px;
-    padding: 0 10px;
-}
-.projectImg {
-    flex:1;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.projectImg--back {
-    position:absolute;
-    width:30px;
-    height:30px;
-    background-color:#000;
-}
-.projectImg img {
-    height: 250px;
-    width:auto;
-}
-.projectInfo {
-    flex:1;
-    padding: 0 15px 40px 15px;
-}
-.projectInfo h1 {
-    margin-top:50px;
-}
-.projectInfo .projectInfo--desc {
-    font-size:15px;
-    color:#999;
-    margin-top:10px;
-}
-.projectInfo--techInfo {
-    color:#000;
+    height: calc(100vh - 120px);
+    background-color: #000;
+    background-image: url(../../../assets/bg001.png);
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .project-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
     text-transform: uppercase;
-    font-size:14px;
-    margin-top:30px;
-    margin-bottom:10px;
-}
-.projectInfo--tech li {
-    margin-left: 30px;
-}
-.projectInfo--testButton {
+    font-weight: 600;
+    padding-bottom: 50px;
+  }
+  
+  .project-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 65%);
+    width: 60vw;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .left-side {
+    padding: 10px;
+  }
+  .left-side img {
+    border-radius: 5px;
+  }
+  .right-side {
+    padding: 10px;
+    font-size:15px;
+    color:#555;
+    margin-top:10px;
+  }
+  ul {
+    margin-left: 25px;
+  }
+  
+.project-button {
     display: inline-block;
     background-color: #ffb340;
     color: #333;
@@ -73,10 +60,10 @@
     cursor: pointer;
     opacity: .8;
 }
-.projectInfo--testButton:hover {
+.project-button:hover {
     opacity: 1;
 }
-.projectInfo--backButton {
+.project-backButton {
     display: inline-block;
     background-color: #333;
     color: #FFF;
@@ -91,13 +78,6 @@
     opacity: .8;
     cursor: pointer;
 }
-.projectInfo--backButton:hover {
+.project-backButton:hover {
     opacity: 1;
-}
-.projectInfo--backMobileButton {
-    display:none;
-    height:40px;
-    text-align:center;
-    line-height: 40px;
-    margin-bottom:30px;
-}
+} 

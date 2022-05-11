@@ -49,9 +49,21 @@
     box-shadow: 0 0 4px #999;
 }
 .social-buttom {
-    width: 365px;
-    margin-bottom: 100px;
-    opacity: .8;
+    display: inline-block;
+    background-color: #ffb340;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.social-buttom a {
+    text-decoration: none;
+    color: #333;
 }
 .social-buttom:hover {
     opacity: 1;
