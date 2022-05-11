@@ -81,3 +81,30 @@
 .project-backButton:hover {
     opacity: 1;
 } 
+
+@media (max-width:1000px) {
+    .project-body {
+      flex-direction: column;
+    }
+    .left-side img {
+      width: 260px;
+    }
+}
+
+@media (max-width:800px) {
+  .right-side {
+    font-size:12px;
+  }
+}
+
+@media (max-width:500px) {
+  .left-side img {
+    width: 200px;
+  }
+}
+
+@media (max-width:480px) {
+  .left-side img {
+    width: 110px;
+  }
+}
