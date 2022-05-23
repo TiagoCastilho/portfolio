@@ -4,10 +4,10 @@ Página onde me apresento, disponibilizo meus contatos e projetos. Tem objetivo 
 
 Neste projeto foram utilizadas as seguintes tecnologias:
 
-• HTML5
-• CSS3
-• Javascript
-• ReactJS
+• HTML5 <br/>
+• CSS3 <br/>
+• Javascript <br/>
+• ReactJS <br/>
 
 Recebendo contantes atualizações.
 
